@@ -1,5 +1,5 @@
 # Variables
-SUBMODULE_DIR = Tests/JSONSchema2Tests/JSON-Schema-Test-Suite
+SUBMODULE_DIR = Tests/JSONSchemaTests/JSON-Schema-Test-Suite
 
 # Target to initialize and update the submodule
 update-submodule:
@@ -12,4 +12,4 @@ format:
 	@swift-format lint --strict --parallel --recursive Sources/ Tests/
 	@echo "Swift code formatted successfully."
 
-.PHONY: clean-submodule format
+.PHONY: update-submodule format
